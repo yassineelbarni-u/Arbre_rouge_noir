@@ -1,0 +1,31 @@
+Comparaison des structures - 1M elements
+
+= Cas 1: Donnees melangees =
+Structure,Insertion ,Recherche ,Suppression ,Total ,Hauteur
+BST,1.51721,0.0154721,0.0066451,1.53933,49
+SET (Red-Black Tree),1.73966,0.0118029,0.1889,1.94036,-1
+MAP (Red-Black Tree),1.94891,0.0131033,0.193183,2.15519,-1
+
+= Cas 2: Donnees triees =
+Structure,Insertion ,Recherche ,Suppression ,Total ,Hauteur
+BST (SAUTÉ - Stack Overflow),-1,-1,-1,-3,1000000
+SET (Red-Black Tree),1.28032,0.0122526,0.172388,1.46496,-1
+MAP (Red-Black Tree),1.28906,0.0116395,0.170827,1.47153,-1
+
+= Taille: 100000 =
+Structure,Insertion ,Recherche ,Suppression ,Total ,Hauteur
+BST,0.116748,0.0076118,0.0058414,0.130201,42
+SET,0.118328,0.006436,0.163257,0.288022,-1
+MAP,0.307704,0.0064851,0.162263,0.476452,-1
+
+= Taille: 500000 =
+Structure,Insertion ,Recherche ,Suppression ,Total ,Hauteur
+BST,24.5986,0.0133447,0.008039,24.62,44
+SET,0.675968,0.0104866,0.182823,0.869278,-1
+MAP,0.860537,0.00993,0.184037,1.0545,-1
+
+= Taille: 1000000 =
+Structure,Insertion ,Recherche ,Suppression ,Total ,Hauteur
+BST,40.0482,0.0205515,0.0100891,40.0788,46
+SET,1.49563,0.0118944,0.158044,1.66557,-1
+MAP,1.7076,0.0118647,0.150121,1.86959,-1
